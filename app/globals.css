@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +30,14 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+/*  Create a new project component: 
+    Cannot click on submit button until the required information is filled in  
+*/
+form#create_project:invalid [type="button"] {
+  pointer-events: none;
+  border: 1px solid #999999;
+  background-color: #CCCCCC;
+  color: #666666;
 }
