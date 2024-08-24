@@ -15,8 +15,8 @@
 
 # production
 /build
-projects/*
-data/*
+/app/projects/*
+/app/data/*
 
 # misc
 .DS_Store

@@ -35,9 +35,54 @@ body {
 /*  Create a new project component: 
     Cannot click on submit button until the required information is filled in  
 */
-form#create_project:invalid [type="button"] {
+
+:root {
+  --preview_width: 1280px;
+  --preview_height: 720px;
+  --preview_width_container: calc(1280px * 0.25);
+  --preview_height_container: calc(720px * 0.2);
+}
+
+form#create_project:invalid [type="button"]:not(#exit_btn) {
   pointer-events: none;
   border: 1px solid #999999;
   background-color: #CCCCCC;
   color: #666666;
+}
+
+.thumbnail iframe {
+  width: var(--preview_width);
+  height: var(--preview_height);
+  background-color: #fff;
+}
+
+.thumbnail {
+  position: relative;
+  -ms-zoom: 0.25;
+  -moz-transform: scale(0.25);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.25);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.25);
+  -webkit-transform-origin: 0 0;
+}
+
+.thumbnail:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.thumbnail-container {
+  width: var(--preview_width_container);
+  height: var(--preview_height_container);
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin: 1rem auto;
+  border-radius: 4px;
 }
