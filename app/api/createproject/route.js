@@ -42,21 +42,24 @@ export async function POST(req) {
         // Create a new file in the project folder
         const filePath = path.join(projectsDir, 'page.js');
 
+        // Page content
         let pageDefault = 
         `
-        "use client"
+"use client"
 
-        const page = () => {
-            return(
-                <>
-                <h1>Hello World!</h1>
-                </>
-            )
-        }
-        
-        export default page;
+import {CreateProjectStructure} from "../../views/project_page/createprojectstructure";
+
+const page = () => {
+    return(
+        <>
+            <CreateProjectStructure />
+        </>
+    )
+}
+
+export default page;
+
         `
-
         fs.writeFileSync(filePath, pageDefault);
 
         // Add the new project to the list of projects

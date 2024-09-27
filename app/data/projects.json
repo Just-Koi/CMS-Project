@@ -10,5 +10,29 @@
     "title": "ss",
     "description": "You can add a project description whenever you want to.",
     "path": "./projects/ss/"
+  },
+  {
+    "id": 3,
+    "title": "Hi",
+    "description": "You can add a project description whenever you want to.",
+    "path": "./projects/hi/"
+  },
+  {
+    "id": 4,
+    "title": "Shrimpwerly",
+    "description": "Strona dla Wiki.",
+    "path": "./projects/shrimpwerly/"
+  },
+  {
+    "id": 5,
+    "title": "test",
+    "description": "You can add a project description whenever you want to.",
+    "path": "./projects/test/"
+  },
+  {
+    "id": 6,
+    "title": "test2",
+    "description": "You can add a project description whenever you want to.",
+    "path": "./projects/test2/"
   }
 ]

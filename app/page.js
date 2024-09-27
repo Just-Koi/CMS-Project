@@ -1,5 +1,5 @@
-import { CreateProjectForm } from "./createprojectform";
-import { Projects } from "./projects";
+import { CreateProjectForm } from "./views/dashboard_page/createprojectform";
+import { Projects } from "./views/dashboard_page/projects";
 
 export default function Home() {
   return (

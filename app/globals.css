@@ -43,12 +43,16 @@ body {
   --preview_height_container: calc(720px * 0.2);
 }
 
+/* Creating project - code starts here */
+
 form#create_project:invalid [type="button"]:not(#exit_btn) {
   pointer-events: none;
   border: 1px solid #999999;
   background-color: #CCCCCC;
   color: #666666;
 }
+
+/* Projects Dahsboard: Project Preview - Code starts here  */
 
 .thumbnail iframe {
   width: var(--preview_width);
@@ -57,6 +61,8 @@ form#create_project:invalid [type="button"]:not(#exit_btn) {
 }
 
 .thumbnail {
+  width: 100vw;
+  overflow: hidden;
   position: relative;
   -ms-zoom: 0.25;
   -moz-transform: scale(0.25);
@@ -78,7 +84,7 @@ form#create_project:invalid [type="button"]:not(#exit_btn) {
 }
 
 .thumbnail-container {
-  width: var(--preview_width_container);
+  width: 100%;
   height: var(--preview_height_container);
   display: block;
   overflow: hidden;
@@ -86,3 +92,15 @@ form#create_project:invalid [type="button"]:not(#exit_btn) {
   margin: 1rem auto;
   border-radius: 4px;
 }
+
+/* Projects Dahsboard: Project Preview - Code ends here  */
+
+/* Creating project - code ends here */
+
+/* Developing the project - code - starts here */
+
+/* Create project structure: Form for AI - Code starts here */
+
+
+
+/* Create project structure: Form for AI - Code ends here */
