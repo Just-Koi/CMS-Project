@@ -11,7 +11,7 @@ export const Projects = () => {
     // Function to fetch all projects
     const fetchProjects = async () => {
         try {
-            const response = await fetch('/api/createproject', {
+            const response = await fetch('/api/create_project', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

@@ -25,7 +25,7 @@ export const CreateProjectForm = () => {
     const createProject = async () => {
         setIsLoading(true);
 
-        const response = await fetch('api/createproject', {
+        const response = await fetch('api/create_project', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

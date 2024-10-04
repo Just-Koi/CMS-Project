@@ -102,5 +102,76 @@ form#create_project:invalid [type="button"]:not(#exit_btn) {
 /* Create project structure: Form for AI - Code starts here */
 
 
+/* html-form-for-creating-a-project-usign-ai */
+.wrapper_form form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  min-width: 320px;
+  max-width: 960px;
+  border: 1px solid rgba(0, 0, 0,.1);
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  box-shadow: 0 .6rem 1rem 0 rgba(0, 0, 0, .05);
+}
+
+.wrapper_form form div{
+  margin: 1.5rem 0;
+}
+
+.wrapper_form form div label,
+.wrapper_form form div select,
+.wrapper_form form div textarea {
+  display: block;
+  width: 100%;
+  margin: .5rem 0;
+}
+
+.wrapper_form form div select{
+  cursor: pointer;
+}
+
+.wrapper_form form div label,
+.wrapper_form form label{
+  user-select: none;
+  font-size: 1.05em;
+}
+
+.wrapper_form form div select,
+.wrapper_form form div textarea,
+.wrapper_form form input,
+.wrapper_form form button{
+  border-radius: 12px;
+  outline: none;
+  padding: 1rem;
+  font-size: .95em;
+  border: 1px solid rgba(0, 0, 0,.1);
+  background: #efefef;
+}
+
+.wrapper_form form div textarea{
+  height: clamp(12rem, 25vw, 9rem);
+  resize: none;
+}
+
+.wrapper_form form label{
+  margin-right: .2rem;
+}
+
+.wrapper_form form input{
+  padding: .4rem;
+  width: 4rem;
+}
+
+.wrapper_form form button{
+  width: 100%;
+  font-weight: 600;
+  border: 2px solid rgba(0, 0, 0,.15);
+  @apply bg-purple-800/90 hover:bg-purple-800 transition-colors text-white;
+}
+
+
 
 /* Create project structure: Form for AI - Code ends here */

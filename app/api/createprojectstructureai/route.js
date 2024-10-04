@@ -1,1 +1,0 @@
-// Build here AI that will be used to build project structure
