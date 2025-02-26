@@ -1,7 +1,7 @@
 import { CreateProjectForm } from "./views/dashboard_page/createprojectform";
 import { Projects } from "./views/dashboard_page/projects";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <aside>

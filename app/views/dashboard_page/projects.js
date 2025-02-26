@@ -11,7 +11,7 @@ export const Projects = () => {
     // Function to fetch all projects
     const fetchProjects = async () => {
         try {
-            const response = await fetch('/api/create_project', {
+            const response = await fetch('/api/get_projects', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ export const Projects = () => {
             }
 
             const result = await response.json();
-            setProjects(result.projects); // Assuming the response contains a `projects` array
+            setProjects(result.projects || []);
         } catch (error) {
             console.error('Error fetching projects:', error);
         } finally {

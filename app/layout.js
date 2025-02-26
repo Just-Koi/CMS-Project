@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../public/globals.css";
 
 // fontawesome
 import "@fortawesome/fontawesome-free/css/all.min.css";
